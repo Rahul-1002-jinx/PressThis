@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You My Lovely Lady ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #ffe6ef, #ffffff);
+      color: #333;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* FLOATING HEARTS */
+    .hearts span {
+      position: fixed;
+      bottom: -50px;
+      font-size: 2rem;
+      animation: floatUp 10s linear infinite;
+      opacity: 0.7;
+    }
+
+    .hearts span:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .hearts span:nth-child(2) { left: 25%; animation-delay: 2s; }
+    .hearts span:nth-child(3) { left: 40%; animation-delay: 4s; }
+    .hearts span:nth-child(4) { left: 60%; animation-delay: 1s; }
+    .hearts span:nth-child(5) { left: 75%; animation-delay: 3s; }
+    .hearts span:nth-child(6) { left: 90%; animation-delay: 5s; }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0); opacity: 0; }
+      10% { opacity: 0.8; }
+      100% { transform: translateY(-120vh); opacity: 0; }
+    }
+
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      margin-bottom: 15px;
+      color: #d6336c;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      margin-bottom: 12px;
+      color: #d6336c;
+    }
+
+    p {
+      font-size: 1.15rem;
+      margin-bottom: 10px;
+    }
+
+    .heart {
+      font-size: 3rem;
+      margin: 20px 0;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    /* TEDDY */
+    .teddy {
+      font-size: 4rem;
+      margin: 15px 0;
+    }
+
+    /* BUTTONS */
+    .reveal-btn {
+      background: #ff5c8a;
+      color: white;
+      border: none;
+      padding: 14px 30px;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      margin-top: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .reveal-text {
+      display: none;
+      margin-top: 15px;
+      font-style: italic;
+    }
+
+    /* GALLERY */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.08);
+    }
+
+    .footer {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    .yes-content {
+      display: none;
+      margin-top: 20px;
+    }
+
+    .yes-content img {
+      max-width: 250px;
+      width: 100%;
+      border-radius: 20px;
+      margin-top: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="hearts">
+  <span>❤️</span>
+  <span>💗</span>
+  <span>💕</span>
+  <span>💖</span>
+  <span>💘</span>
+  <span>❤️</span>
+</div>
+
+<section>
+  <h1>Hi, Cutu ❤️</h1>
+  <div class="teddy">🧸</div>
+  <p>This is how you became my favorite person.</p>
+  <div class="heart">❤️</div>
+</section>
+
+<section>
+  <h2>The First Moment</h2>
+  <p>It was the first day at LIBA.</p>
+  <p>You were so cute that I still remember it clearly.</p>
+</section>
+
+<section>
+  <h2>The Realization</h2>
+  <p>I was ready to do things for you I’d never do for others.</p>
+  <p>You made me feel worthy of love.</p>
+</section>
+
+<section>
+  <h2>Something I Never Told You</h2>
+  <p>Tap ❤️</p>
+
+  <button class="reveal-btn" onclick="revealText()">Tap to read</button>
+
+  <p id="hiddenText" class="reveal-text">
+    Loving you made me feel safe, without pretending.
+    I will Chose to Love Endlessly.
+    You mean more than anything and everything to me in this world.
+    We have continously learnt and grown in this relationship.
+    I know it has been hard for you recently due to me.
+    I will assure you that I will be better and never escape.
+    I would fight and fail rather than not trying.
+  </p>
+</section>
+
+<section>
+  <h2>Some of My Favorite Moments</h2>
+  <div class="teddy">🧸🧸🧸</div>
+
+  <div class="gallery">
+    <img src="photos/photo1.jpg">
+    <img src="photos/photo2.jpg">
+    <img src="photos/photo3.jpg">
+    <img src="photos/photo4.jpg">
+    <img src="photos/photo5.jpg">
+    <img src="photos/photo7.jpeg">
+  </div>
+</section>
+
+<section>
+  <h2>Why You</h2>
+  <p>Because I’m me when I’m with you.</p>
+  <p>Because you go beyond the minimum.</p>
+  <p>Because you’re my boss lady 🧸❤️</p>
+</section>
+
+<section>
+  <h2>Today</h2>
+  <p>Out of everything in this world,</p>
+  <p>I would still choose you.</p>
+  <div class="heart">💖</div>
+</section>
+
+<section class="footer">
+  <p>Will you be my Valentine? 💕</p>
+
+  <button class="reveal-btn" onclick="yesAnswer()">YES ❤️</button>
+
+  <div id="yesContent" class="yes-content">
+    <p>Yay ❤️ I already knew it, my love 🧸💖</p>
+    <img src="photos/photo6.jpg">
+  </div>
+</section>
+
+<script>
+  function revealText() {
+    document.getElementById("hiddenText").style.display = "block";
+  }
+
+  function yesAnswer() {
+    document.getElementById("yesContent").style.display = "block";
+  }
+</script>
+
+</body>
+</html>
